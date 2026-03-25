@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/TCC/css/style.css">
+    <title>Sobre mim</title>
+</head>
+<body>
+  <header>
+      <div class="container">
+        <h1 class="logo">Arte em mim?</h1>
+        <nav>
+          <ul>
+            <li><a href="/TCC/html/maissobrearte.html">+sobre arte</a></li>
+            <li><a href="/TCC/html/navbar.html">Home</a></li>
+            <li><a href="/TCC/html/contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+    <br>
+    <main>
+              <h2>Sobre mim</h2><br>
+
+      <section>
+
+        <div class="text">
+          <p>Desde cedo, sempre fui uma pessoa cheia de sonhos, criatividade e vontade de crescer. Meu nome é Victoria, e hoje estou construindo algo que vai muito além de um simples doce: estou construindo um propósito.<br>
+
+Comecei a fazer pães de mel com o desejo de ter algo meu, de transformar uma ideia em realidade. No início, era algo simples, quase como um teste, mas com o tempo fui me apaixonando por cada detalhe — o cheiro, o preparo, a decoração e, principalmente, a alegria de ver as pessoas gostando do que eu fazia. Mais do que vender, eu queria proporcionar momentos doces e especiais.<br>
+
+Sou uma pessoa determinada, que acredita que com esforço, dedicação e fé é possível conquistar grandes coisas. Estou sempre buscando aprender mais, melhorar e evoluir, tanto como empreendedora quanto como pessoa.
+
+E quem eu quero ser? Quero ser alguém de sucesso, independente, que inspire outras pessoas a correrem atrás dos seus sonhos. Quero que meu trabalho seja reconhecido não só pela qualidade, mas também pelo carinho e dedicação que coloco em cada pão de mel.<br>
+
+Essa é só a minha história começando — e eu sei que ainda tenho um futuro incrível pela frente.</p>
+</div>
+  <div class="imagem">
+<img src="" class="">
+      </section>
+    </main>
+    </div>
+    <button>Voltar</button>
+</body>
+</html>
