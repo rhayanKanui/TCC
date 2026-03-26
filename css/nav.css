@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anonymous Pro', 'Source Code Pro', 'Fira Code', 'JetBrains Mono', 'Cascadia Code', Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+/* NAV */
+
+nav {
+    background: linear-gradient(38deg, #2e2a2e, #4b2222, #20191a, rgb(50, 13, 26), #381515);
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;                 
+    justify-content: space-between; 
+    align-items: center;            
+    font-weight: bolder;
+}
+
+/* logo */
+.logo {
+    color: rgb(122, 197, 218);
+    font-size: 35px;
+}
+
+/* menu */
+nav ul {
+    list-style: none;
+    display: flex;      /* deixa em linha */
+    gap: 30px;          /* espaço entre itens */
+}
+
+nav ul li {
+    position: relative;
+}
+
+/* links */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* hover suave */
+nav ul li a:hover {
+    color: #964b00;
+    transform: scale(1.1);
+}
+
+/* barrinha animada */
+nav a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* melhor posição */
+    height: 3px;
+    width: 0%;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* OUTROS */
+
+.texto-imagem {
+    color: rgb(255, 251, 0);
+}
+
+.minha-imagem {
+    color: rgb(0, 0, 0);
+}
+
+.exemplos-home {
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 70%;
+}
